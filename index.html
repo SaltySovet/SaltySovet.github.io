@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+     
     <title>www.directcleaningcompany.nl/Home</title>
     <link rel="icon" type="image/x-icon" href="logo.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  .mobileHide {
+    display: inline;
+  } @media only screen 
+    and(min-device-width: 320px)
+    and(max-device-width: 480px) {.mobileHide{ display: none; }
+  }
   body {
     font-size: 28px;
   }
@@ -126,7 +132,7 @@ margin-left: 4%;}
          Daarnaast vinden wij het vertrouwen van de opdrachtgever heel erg belangrijk, <br> want de klant staat bij ons altijd centraal!
 
          
-      <picture>   <source srcset="cleaning.png" media="(max-width: 600px)">  <img id="clean" src="cleaning.png"> </picture>
+     <div class="mobileHide">  <img id="clean" src="cleaning.png"> </div>
          <div class="kwaliteit">
  <strong> <p id="verwachting"> Wat kunt u van ons verwachten: </p> </strong><br> 
       <picture> <img class="mark" src="mark.png"> </picture>
