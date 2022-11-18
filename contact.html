@@ -6,6 +6,21 @@
     <link rel="icon" type="image/x-icon" href="logo.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  @media screen and (max-width: 480px) {
+  .stofzuiger {
+    visibility: hidden;
+    display: none;
+
+  }
+}
+@media screen and (max-width: 480px) {
+  .belangrijk{
+    margin-left: -120%;
+    margin-top: 23%;
+    
+
+  }
+}
   body {
     font-size: 28px;
   }
@@ -115,7 +130,7 @@ position: absolute; }
 
 <br> <br> 
  <center> <h1 id="contact" > Contact </h1> </center> 
- <img id="stofzuiger" src=" stofzuiger.png">
+ <div class="stofzuiger"> <img id="stofzuiger" src=" stofzuiger.png"> </div>
 <br> <br>
 <p id="naam" > 
 
@@ -124,11 +139,13 @@ position: absolute; }
 </p>
 
 <p id="adres"> Van der Slootsingel 46 <br> 2625JW Delft</p>
-<p id="details"> Gegevens:</p>
+<div class="belangrijk"> <p id="details"> Gegevens:</p>
 <p id="tel" > Tel: 0687695520</p>
 <p id="email" > Email: <a href="https://mail.google.com/" target="_blank">directcleaningcompany@gmail.com</a> </p>
 <p id="kvk"> KVK: </p>
-<p id="btw" > BTW: </p>
+<p id="btw" > BTW: </p> </div>
+
+
 
 
 
